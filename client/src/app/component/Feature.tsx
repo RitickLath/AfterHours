@@ -35,7 +35,7 @@ const Feature = () => {
 
         {/* Header */}
         <h2 className="text-3xl md:text-5xl font-bold mb-4 leading-tight">
-          Why sync with 3AM Session?
+          Why sync with AfterHours?
         </h2>
 
         <p className="text-gray-300 max-w-xl mx-auto text-lg">

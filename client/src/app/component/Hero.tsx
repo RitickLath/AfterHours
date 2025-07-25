@@ -11,7 +11,7 @@ const Hero = () => {
 
         {/* Main Heading */}
         <h1 className="pointer-events-none text-3xl sm:text-4xl md:text-6xl font-bold leading-tight">
-          Stream in sync. Feel the moment. Welcome to 3am Session.
+          Stream in sync. Feel the moment. Welcome to AfterHours.
         </h1>
 
         {/* Subheading */}
