@@ -8,8 +8,11 @@ import {
   SignedOut,
   UserButton,
 } from "@clerk/nextjs";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
+  const router = useRouter();
+
   return (
     <nav className="w-full px-6 py-4 bg-black text-white shadow-md flex justify-between items-center">
       {/* Logo */}
@@ -28,6 +31,12 @@ const Navbar = () => {
           </SignOutButton>
           <button className="cursor-pointer px-4 py-2 bg-white/10 hover:shadow-orange-500 shadow-xs transition duration-200 rounded-full text-sm font-medium">
             Schedule Room
+          </button>
+          <button
+            onClick={() => router.push("/rooms")}
+            className="cursor-pointer px-4 py-2 bg-white/10 hover:shadow-orange-500 shadow-xs transition duration-200 rounded-full text-sm font-medium"
+          >
+            All Rooms
           </button>
         </SignedIn>
 
